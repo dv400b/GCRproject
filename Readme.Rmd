@@ -1,0 +1,19 @@
+---
+title: "Readme for run_analysis.R"
+output: html_document
+---
+
+INPUT:  smartphone sensor data in a directory "UCI HAR Dataset" located in the same directory as 
+the script run_analysis.R
+
+OUTPUT:  a processed, tidy data set run_analysis_summary.txt, located in the same directory as
+the script run_analysis.R
+
+HOW THE SCIPT WORKS:
+After defining the the location of the data directory and files, the global (top-level) feature
+and activity codes are read.  Then a list of subdirectories to furtrher read ("train", "test") is
+defined.  For each item in this list, the "Subject", "Y", and "X" files are then loaded;
+a large data.frame is made from these three files.  Finally, the train and test data.frames
+are merged into a single aggregate data.frame (df.all).  From this, a summary data.frame is
+built consisting of the average value of each sensor field for each subject and activity,
+and written to run_analysis_summary.txt.
