@@ -1,0 +1,26 @@
+---
+title: "Code Book: UCI HAR Dataset"
+output: html_document
+---
+
+STUDY DESIGN
+
+Smartphone sensor data was obtained as described in
+https://class.coursera.org/getdata-008/human_grading/view/courses/972586/assessments/3/submissions
+and unzipped to the working directory.
+
+Script run_analysis.R then converts the raw data into tidy data, as described further in README.md.
+
+CODE BOOK
+
+30 unique subjects.
+
+Each subject has data for the following activities:
+-laying, 
+-sitting, 
+-standing, 
+-walking, 
+-walking downstairs, and
+-walking upstairs.
+
+Each subject/activity
